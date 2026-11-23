@@ -1,0 +1,369 @@
+/* ===== Colors ===== */
+:root {
+  --bg: #10201a;
+  --bg-deep: #0d1a15;
+  --card: #183027;
+  --border: #2f4a3e;
+  --text: #ece6d3;
+  --muted: #b3bfb2;
+  --gold: #c49a4a;
+  --display: "Marcellus", Georgia, serif;
+  --body: "Source Serif 4", Georgia, serif;
+}
+
+/* ===== Base ===== */
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+img { display: block; max-width: 100%; }
+
+a { color: var(--text); }
+a:hover { color: var(--gold); }
+
+h1, h2, h3 { font-family: var(--display); font-weight: 400; margin: 0; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-intro {
+  margin: 0 0 36px;
+  max-width: 620px;
+  color: var(--muted);
+}
+
+/* ===== Nav ===== */
+.nav {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 2;
+  height: 72px;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(rgba(16, 32, 26, .9), rgba(16, 32, 26, 0));
+}
+
+.nav-logo { height: 38px; width: auto; }
+.nav-spacer { flex: 1; }
+
+.nav a {
+  margin-left: 24px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 150px 48px 104px;
+  background: var(--bg);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(16, 32, 26, .92) 0%, rgba(16, 32, 26, .7) 45%, rgba(16, 32, 26, .2) 100%);
+}
+
+.hero-fade {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 35%;
+  background: linear-gradient(to top, var(--bg), rgba(16, 32, 26, 0));
+}
+
+.hero-content { position: relative; }
+
+.badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font: 400 20px var(--display);
+}
+
+.hero h1 {
+  margin-top: 20px;
+  font-size: 96px;
+  line-height: 1.02;
+}
+
+.hero-text { max-width: 620px; margin: 20px 0 8px; }
+
+.hero-meta {
+  margin: 0 0 32px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 26px;
+  font: 400 20px var(--display);
+  text-decoration: none;
+}
+
+.btn-primary { background: var(--gold); color: var(--bg); }
+.btn-primary:hover { background: #d4ad60; color: var(--bg); }
+
+.btn-outline { border: 1px solid var(--border); }
+
+.date-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 36px;
+}
+
+.tile {
+  min-width: 104px;
+  padding: 14px 10px;
+  text-align: center;
+  background: rgba(24, 48, 39, .88);
+  border: 1px solid var(--border);
+}
+
+.tile-num {
+  font: 400 42px/1 var(--display);
+  color: var(--gold);
+}
+
+.tile-label {
+  margin-top: 6px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* ===== Cast ===== */
+.cast { padding: 88px 48px; }
+
+.cast h2,
+.watch h2 {
+  margin-bottom: 10px;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cast-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.cast-card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+.cast-card img.pos-30 { object-position: 50% 30%; }
+
+.cast-body { padding: 14px 16px 18px; }
+
+.cast-body h3 { font-size: 22px; line-height: 1.15; }
+
+.cast-body p {
+  margin: 6px 0 0;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+/* ===== Watch first (timeline) ===== */
+.watch {
+  background: var(--bg-deep);
+  border-top: 1px solid var(--border);
+}
+
+.watch-sticky {
+  padding: 88px 0 40px;
+}
+
+.watch .container { padding: 0 48px; }
+
+.watch .section-intro { margin-bottom: 40px; }
+
+/* Fallback: a plain horizontal scroller */
+.track-window {
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.track {
+  position: relative;
+  display: flex;
+  gap: 22px;
+  width: max-content;
+  padding: 0 48px;
+}
+
+.track-line {
+  position: absolute;
+  left: 48px; right: 48px; top: 6px;
+  height: 2px;
+  background: var(--border);
+}
+
+.film {
+  position: relative;
+  flex: none;
+  width: 250px;
+  padding-top: 34px;
+}
+
+.dot {
+  position: absolute;
+  left: 0; top: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg-deep);
+  border: 2px solid var(--gold);
+}
+
+.film-box {
+  height: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.film-box img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: 50% 15%;
+}
+
+.film-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px 16px;
+}
+
+.year {
+  font: 400 22px/1 var(--display);
+  color: var(--gold);
+}
+
+.film-text h3 { font-size: 19px; line-height: 1.15; }
+
+.tag { font-size: 13px; color: var(--muted); }
+
+.film-text p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+/* Pure-CSS scroll effect: scrolling down slides the timeline sideways.
+   Works in browsers that support scroll-driven animations (Chrome, Edge);
+   others keep the horizontal scroller above. */
+@supports (animation-timeline: view()) {
+  .watch {
+    height: 2600px;
+    view-timeline-name: --watch;
+  }
+
+  .watch-sticky {
+    position: sticky;
+    top: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .track-window { overflow: hidden; }
+
+  .track {
+    animation: slide linear both;
+    animation-timeline: --watch;
+    animation-range: contain 0% contain 100%;
+  }
+
+  @keyframes slide {
+    from { transform: translateX(0); }
+    to   { transform: translateX(calc(-100% + 100vw)); }
+  }
+}
+
+/* ===== Footer ===== */
+.footer {
+  padding: 34px 48px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.footer p { margin: 0; }
+
+.footer-credit {
+  margin-bottom: 8px !important;
+  font: 400 20px var(--display);
+  color: var(--text);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .cast-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero h1 { font-size: 64px; }
+}
+
+@media (max-width: 600px) {
+  .nav { padding: 0 16px; }
+  .nav a { margin-left: 8px; }
+  .hero { padding: 120px 16px 72px; }
+  .hero h1 { font-size: 44px; }
+  .cast { padding: 64px 16px; }
+  .cast-grid { gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cast-body { padding: 10px 12px 14px; }
+  .cast-body h3 { font-size: 18px; overflow-wrap: anywhere; }
+  .cast h2, .watch h2 { font-size: 36px; }
+  .watch .container { padding: 0 16px; }
+  .track { padding: 0 16px; }
+  .track-line { left: 16px; right: 16px; }
+  .film { width: 220px; }
+}
