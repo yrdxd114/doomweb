@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avengers: Doomsday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav">
+    <img class="nav-logo" src="src/marvel-logo.png" alt="Marvel">
+    <span class="nav-spacer"></span>
+    <a href="#cast">Cast</a>
+    <a href="#watch">Watch first</a>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero">
+    <img class="hero-bg" src="src/hero.png" alt="">
+    <span class="hero-shade"></span>
+    <span class="hero-fade"></span>
+
+    <div class="container hero-content">
+      <div class="badge">In theaters December 18, 2026</div>
+      <h1>Avengers: Doomsday</h1>
+      <p class="hero-text">Doctor Doom arrives, and heroes from three universes, the Avengers and Wakandans, the X-Men and the Fantastic Four, have to stand together against him. It is the first Avengers film in seven years and sets up the Multiverse Saga finale, Secret Wars.</p>
+      <p class="hero-meta">Directed by Anthony and Joe Russo. Robert Downey Jr. plays Doom. PG-13, 165 minutes.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://www.youtube.com/results?search_query=Avengers+Doomsday+official+trailer">
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1.5v13l11-6.5z" fill="currentColor"/></svg>
+          Watch the trailer
+        </a>
+        <a class="btn btn-outline" href="#watch">What to watch first</a>
+      </div>
+
+      <div class="date-tiles" id="countdown">
+        <div class="tile"><div class="tile-num" id="cd-days">0</div><div class="tile-label">days</div></div>
+        <div class="tile"><div class="tile-num" id="cd-hours">0</div><div class="tile-label">hours</div></div>
+        <div class="tile"><div class="tile-num" id="cd-minutes">0</div><div class="tile-label">minutes</div></div>
+        <div class="tile"><div class="tile-num" id="cd-seconds">0</div><div class="tile-label">seconds</div></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== CAST ========== -->
+  <section id="cast" class="cast">
+    <div class="container">
+      <h2>The cast</h2>
+      <p class="section-intro">A few of the biggest names confirmed for the film.</p>
+
+      <div class="cast-grid">
+        <article class="cast-card">
+          <img src="src/cast-robert-downey-jr.png" alt="Robert Downey Jr.">
+          <div class="cast-body"><h3>Robert Downey Jr.</h3><p>Victor von Doom / Doctor Doom</p></div>
+        </article>
+        <article class="cast-card">
+          <img src="src/cast-chris-hemsworth.png" alt="Chris Hemsworth">
+          <div class="cast-body"><h3>Chris Hemsworth</h3><p>Thor</p></div>
+        </article>
+        <article class="cast-card">
+          <img src="src/cast-pedro-pascal.png" alt="Pedro Pascal">
+          <div class="cast-body"><h3>Pedro Pascal</h3><p>Reed Richards / Mr. Fantastic</p></div>
+        </article>
+        <article class="cast-card">
+          <img src="src/cast-vanessa-kirby.png" alt="Vanessa Kirby">
+          <div class="cast-body"><h3>Vanessa Kirby</h3><p>Sue Storm / Invisible Woman</p></div>
+        </article>
+        <article class="cast-card">
+          <img src="src/cast-tom-hiddleston.png" alt="Tom Hiddleston">
+          <div class="cast-body"><h3>Tom Hiddleston</h3><p>Loki</p></div>
+        </article>
+        <article class="cast-card">
+          <img src="src/cast-sebastian-stan.png" alt="Sebastian Stan">
+          <div class="cast-body"><h3>Sebastian Stan</h3><p>Bucky Barnes / Winter Soldier</p></div>
+        </article>
+        <article class="cast-card">
+          <img src="src/cast-patrick-stewart.png" alt="Patrick Stewart">
+          <div class="cast-body"><h3>Patrick Stewart</h3><p>Professor X</p></div>
+        </article>
+        <article class="cast-card">
+          <img class="pos-30" src="src/cast-ian-mckellen.png" alt="Ian McKellen">
+          <div class="cast-body"><h3>Ian McKellen</h3><p>Magneto</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WATCH FIRST ========== -->
+  <section id="watch" class="watch">
+    <div class="watch-sticky">
+      <div class="container">
+        <h2>Watch this first</h2>
+        <p class="section-intro">Disney+&rsquo;s 15-title list, in release order. Recommended, not required. Keep scrolling down and it slides across.</p>
+      </div>
+
+      <div class="track-window">
+        <div class="track">
+          <div class="track-line"></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-x-men.jpg" alt="X-Men poster">
+            <div class="film-text"><span class="year">2000</span><h3>X-Men</h3><span class="tag">Fox X-Men</span><p>Starts the mutant story that Doomsday now brings into the MCU.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-x2.jpg" alt="X2: X-Men United poster">
+            <div class="film-text"><span class="year">2003</span><h3>X2: X-Men United</h3><span class="tag">Fox X-Men</span><p>Deepens Professor X, Magneto and the X-Men team.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-captain-america-first-avenger.jpg" alt="Captain America: The First Avenger poster">
+            <div class="film-text"><span class="year">2011</span><h3>Captain America: The First Avenger</h3><span class="tag">Infinity Saga</span><p>Introduces Steve Rogers and Peggy Carter.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-avengers.jpg" alt="The Avengers poster">
+            <div class="film-text"><span class="year">2012</span><h3>The Avengers</h3><span class="tag">Infinity Saga</span><p>The first team-up, with Thor and Loki.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-infinity-war.jpg" alt="Avengers: Infinity War poster">
+            <div class="film-text"><span class="year">2018</span><h3>Avengers: Infinity War</h3><span class="tag">Infinity Saga</span><p>Thanos arrives and the heroes suffer a huge loss.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-endgame.jpg" alt="Avengers: Endgame poster">
+            <div class="film-text"><span class="year">2019</span><h3>Avengers: Endgame</h3><span class="tag">Infinity Saga</span><p>The previous Avengers finale.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-loki.jpg" alt="Loki poster">
+            <div class="film-text"><span class="year">2021</span><h3>Loki</h3><span class="tag">Disney+ series</span><p>Opens up the multiverse and the TVA.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-shang-chi.jpg" alt="Shang-Chi and the Legend of the Ten Rings poster">
+            <div class="film-text"><span class="year">2021</span><h3>Shang-Chi and the Legend of the Ten Rings</h3><span class="tag">Multiverse Saga</span><p>Brings Shang-Chi into the wider story.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-no-way-home.jpg" alt="Spider-Man: No Way Home poster">
+            <div class="film-text"><span class="year">2021</span><h3>Spider-Man: No Way Home</h3><span class="tag">Multiverse Saga</span><p>The multiverse breaks open and variants cross over.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-multiverse-of-madness.jpg" alt="Doctor Strange in the Multiverse of Madness poster">
+            <div class="film-text"><span class="year">2022</span><h3>Doctor Strange in the Multiverse of Madness</h3><span class="tag">Multiverse Saga</span><p>Explores alternate universes and their dangers.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-wakanda-forever.jpg" alt="Black Panther: Wakanda Forever poster">
+            <div class="film-text"><span class="year">2022</span><h3>Black Panther: Wakanda Forever</h3><span class="tag">Multiverse Saga</span><p>Shuri takes center stage as Wakanda faces new threats.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-deadpool-wolverine.jpg" alt="Deadpool and Wolverine poster">
+            <div class="film-text"><span class="year">2024</span><h3>Deadpool &amp; Wolverine</h3><span class="tag">Multiverse Saga</span><p>Another multiverse crossover with Fox characters.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-brave-new-world.jpg" alt="Captain America: Brave New World poster">
+            <div class="film-text"><span class="year">2025</span><h3>Captain America: Brave New World</h3><span class="tag">Multiverse Saga</span><p>Sam Wilson steps up as Captain America.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-thunderbolts.jpg" alt="Thunderbolts* poster">
+            <div class="film-text"><span class="year">2025</span><h3>Thunderbolts*</h3><span class="tag">Multiverse Saga</span><p>Sets up the new team of antiheroes.</p></div>
+          </div></div>
+
+          <div class="film"><span class="dot"></span><div class="film-box">
+            <img src="src/poster-fantastic-four.jpg" alt="The Fantastic Four: First Steps poster">
+            <div class="film-text"><span class="year">2025</span><h3>The Fantastic Four: First Steps</h3><span class="tag">Multiverse Saga</span><p>Introduces the Fantastic Four, and a glimpse of Doom.</p></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p class="footer-credit">Made by Yassine Riadh Daoud and Ibrahim Chiha</p>
+    <p>Fan page. Avengers: Doomsday and all related names and images belong to Marvel Studios and Disney.</p>
+  </footer>
+
+  <!-- Countdown to the release date (runs in the browser, no backend needed) -->
+  <script>
+    var release = new Date(2026, 11, 18, 0, 0, 0); // December 18, 2026 (month 11 = December)
+
+    function updateCountdown() {
+      var left = Math.max(0, Math.floor((release - new Date()) / 1000));
+      document.getElementById('cd-days').textContent = Math.floor(left / 86400);
+      document.getElementById('cd-hours').textContent = Math.floor(left % 86400 / 3600);
+      document.getElementById('cd-minutes').textContent = Math.floor(left % 3600 / 60);
+      document.getElementById('cd-seconds').textContent = left % 60;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
